@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- main title -->
+    <dimen name="activity_main_title_left">10dp</dimen>
+    <dimen name="activity_main_title_right">10dp</dimen>
+
+    <dimen name="mm_up_arrow_margin">-16dp</dimen>
+
+
+    <!-- CardView -->
+    <dimen name="cardview_height">150dp</dimen>
+    <dimen name="cardview_margin">10dp</dimen>
+    <dimen name="cardview_radius">5dp</dimen>
+
+    <dimen name="location_weather_margin">15dp</dimen>
+    <dimen name="location_weather_paddingleft">15dp</dimen>
+    
+    <dimen name="location_city_text_size">20sp</dimen>
+    <dimen name="location_detailed_margin">5dp</dimen>
+    <dimen name="location_detailed_padding">5dp</dimen>
+    <dimen name="location_belong_text_size">13sp</dimen>
+    
+    <dimen name="location_below_margin_top">15dp</dimen>
+    <dimen name="location_temperature_text_size">48sp</dimen>
+    <dimen name="location_degree_marginbottom">5dp</dimen>
+    <dimen name="location_degree_text_size">15sp</dimen>
+    <dimen name="location_arrow_color_marginbottom">12dp</dimen>
+    <dimen name="location_arrow_color_marginleft">5dp</dimen>
+    
+    <dimen name="location_belt_marginleft">10dp</dimen>
+    <dimen name="location_belt_marginbottom">12dp</dimen>
+    <dimen name="location_probability_text_size">10sp</dimen>
+    <dimen name="location_probability_marginleft">10dp</dimen>
+    <dimen name="location_probability_marginbottom">5dp</dimen>
+
+    <dimen name="location_right_margin_paddingleft">80dp</dimen>
+    <dimen name="location_time_paddingtop">30dp</dimen>
+    <dimen name="location_time_paddingleft">10dp</dimen>
+    <dimen name="location_time_text_size">15sp</dimen>
+</resources>

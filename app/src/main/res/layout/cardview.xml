@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cardview_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/cardview_margin"
+    android:background="@color/colorMain"
+    app:cardCornerRadius="@dimen/cardview_radius">
+
+    <LinearLayout
+        android:id="@+id/location_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/location_weather_margin"
+        android:paddingLeft="@dimen/location_weather_paddingleft"
+        >
+
+        <LinearLayout
+            android:id="@+id/location_left"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                >
+                <TextView
+                    android:id="@+id/location_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="岳阳"
+                    android:textColor="@color/colorMain_b"
+                    android:textSize="@dimen/location_city_text_size"/>
+                <Button
+                    android:id="@+id/location_detailed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/location_detailed_margin"
+                    android:padding="@dimen/location_detailed_padding"
+                    android:layout_toRightOf="@id/location_city"
+                    android:background="@drawable/ripple_bg"
+                    android:textColor="@color/colorMain_c"
+                    android:text="祥细"/>
+
+                <TextView
+                    android:id="@+id/location_belong"
+                    android:layout_below="@id/location_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="湖南"
+                    android:textColor="@color/colorMain_c"
+                    android:textSize="@dimen/location_belong_text_size"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/location_below_margin_top"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/location_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/colorMain_b"
+                    android:textSize="@dimen/location_temperature_text_size"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/location_degree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="o"
+                        android:textColor="@color/colorMain_b"
+                        android:layout_marginBottom="@dimen/location_degree_marginbottom"
+                        android:textSize="@dimen/location_degree_text_size"/>
+
+                    <ImageView
+                        android:id="@+id/location_arrow_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/location_arrow_color_marginbottom"
+                        android:layout_marginLeft="@dimen/location_arrow_color_marginleft"
+                        android:src="@drawable/arrows_black"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/location_belt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/location_belt_marginleft"
+                    android:layout_marginBottom="@dimen/location_belt_marginbottom"
+                    android:src="@drawable/sky"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"/>
+                <TextView
+                    android:id="@+id/location_probability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100%"
+                    android:textColor="@color/colorMain_b"
+                    android:textSize="@dimen/location_probability_text_size"
+                    android:layout_marginLeft="@dimen/location_probability_marginleft"
+                    android:layout_marginBottom="@dimen/location_probability_marginbottom"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/location_right"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/location_right_margin_paddingleft"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/location_weather_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/location_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2:21"
+                android:paddingTop="@dimen/location_time_paddingtop"
+                android:paddingLeft="@dimen/location_time_paddingleft"
+                android:textSize="@dimen/location_time_text_size"
+                android:textColor="@color/colorMain_b"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
